@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header_title">
+            <h1>PRESUPUESTOS</h1>
+        </div>
+        <div class="header_title">
+            <h3>Dime lo que necesitas y seleccionare el PC que se adapte a ti</h3>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <form class="form_datos" action="/mis_datos">
+                <span>Tipo de uso</span><br>
+                <input type="radio" id="multimedia" name="tipo_uso" value="Multimedia">
+                <label for="multimedia">PC Multimedia</label><br>
+                <input type="radio" id="gaming" name="tipo_uso" value="Gaming">
+                <label for="gaming">PC Gaming</label><br>
+                <input type="radio" id="edicion" name="tipo_uso" value="Edicion">
+                <label for="edicion">PC Edicion</label><br>
+                <input type="radio" id="streaming" name="tipo_uso" value="Streaming">
+                <label for="streaming">PC Streaming</label>
+            </form>
+            <form class="form_datos" action="/mis_datos">
+                <span>Tipo de presupuesto</span><br>
+                <input type="radio" id="economico" name="tipo_presupuesto" value="Economico">
+                <label for="economico">Lo mas economico</label><br>
+                <input type="radio" id="equilibrado" name="tipo_presupuesto" value="Equilibrado">
+                <label for="equilibrado">Equilibrado</label><br>
+                <input type="radio" id="mejor" name="tipo_presupuesto" value="Mejor">
+                <label for="mejor">Lo mejor</label>
+            </form>
+            <form class="form_datos" action="/mis_datos">
+                <span>Tamaño del PC</span><br>
+                <input type="radio" id="mini" name="tamano_pc" value="Mini">
+                <label for="mini">Mini (ITX)</label><br>
+                <input type="radio" id="pequeno" name="tamano_pc" value="Pequeno">
+                <label for="pequeno">Pequeño (Micro ATX)</label><br>
+                <input type="radio" id="estandar" name="tamano_pc" value="Estandar">
+                <label for="estandar">Estandar (ATX)</label><br>
+                <input type="radio" id="gigante" name="tamano_pc" value="Gigante">
+                <label for="gigante">Gigante (ATX y EATX)</label>
+            </form>
+            <form class="form_datos" action="/mis_datos">
+                <span>Diseño</span><br>
+                <input type="radio" id="basico" name="diseno" value="Basico">
+                <label for="basico">Basico</label><br>
+                <input type="radio" id="rgb" name="diseno" value="Rgb">
+                <label for="rgb">RGB</label><br>
+                <input type="radio" id="minimal" name="diseno" value="Minimal">
+                <label for="minimal">Minimal</label><br>
+                <input type="radio" id="diseno" name="diseno" value="Diseno">
+                <label for="diseno">De diseño</label>
+            </form>
+            <form class="form_datos" action="/mis_datos">
+                <span>Fundas de cables</span><br>
+                <input type="radio" id="si" name="sleeving" value="Si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="no" name="sleeving" value="No">
+                <label for="no">No</label><br>
+            </form>
+            <form class="form_datos" action="/mis_datos">
+                <span>Tipo de refrigeracion</span><br>
+                <input type="radio" id="stock" name="tipo_refrigeracion" value="Stock">
+                <label for="stock">Stock</label><br>
+                <input type="radio" id="aire" name="tipo_refrigeracion" value="Aire">
+                <label for="aire">Aire</label><br>
+                <input type="radio" id="liquida" name="tipo_refrigeracion" value="Liquida">
+                <label for="liquida">Liquida</label><br>
+                <input type="radio" id="custom" name="tipo_refrigeracion" value="Custom">
+                <label for="custom">Liquida Custom</label>
+            </form>
+        </div>
+        <div class="contenedor_dos">
+            <button class="enviar_p" type="submit" onclick="alert('Datos enviados')">Enviar Propuesta</button>
+        </div>
+    </main>
+</body>
+</html>
